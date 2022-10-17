@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+   text-decoration: none; 
+}
+
+.btn-outline-success {
+    border-radius: 0;
+    color:black;
+}
+
+.loader {
+    display: none;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loading {
+    border: 2px solid #ccc;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-top-color: #000000;
+    border-left-color: #0000;
+    animation: spin 1s infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .table-results {
+    margin-left: 15px;
+    margin-top: 10px;
+  }
