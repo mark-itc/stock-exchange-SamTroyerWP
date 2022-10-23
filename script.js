@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+
+// const url = 'https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/search?query=AA&limit=10&exchange=NASDAQ'
+
+>>>>>>> 66016c62cfa2ca4e8a42cec735fc7d40f1b496a8
 const searchButton = document.getElementById('searchButton')
 
 searchButton.addEventListener('click', () => {
@@ -24,6 +30,11 @@ function searchResults() {
         }
     };
 
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> 66016c62cfa2ca4e8a42cec735fc7d40f1b496a8
     xmlhttp.open("GET", "https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/search?query=AA&limit=10&exchange=NASDAQ", true);
     xmlhttp.send();
 }
