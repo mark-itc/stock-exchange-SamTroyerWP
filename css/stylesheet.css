@@ -43,13 +43,16 @@ a {
   .table-results {
     margin-left: 15px;
     margin-top: 10px;
-<<<<<<< HEAD
   }
 
+  .container {
+    margin-bottom:50px;
+  }
   .comp-name {
     margin-left: 60px;
     margin-top: 20px;
     padding-bottom: 20px;
+    color: blue;
   }
 
   .comp-image {
@@ -59,11 +62,9 @@ a {
   }
 
   .comp-description {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .comp-price {
-    margin-top: 100px;
-=======
->>>>>>> 66016c62cfa2ca4e8a42cec735fc7d40f1b496a8
+    margin-top: 20px;
   }
