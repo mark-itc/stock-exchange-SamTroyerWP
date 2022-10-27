@@ -13,30 +13,27 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 <body>
-  <div id="marqueeNav" class="marquee-nav">
-    <nav id="navbar" class="navbar bg-white"></nav>
-  </div>
- <div id="searchContainer" class="container mt-5 shadow-lg p-5 bg-white rounded">
-  <div class="search-title" id="searchTitle">
-    <h1>Search Nasdaq Stocks</h1>
-  </div>
-    <nav class="navbar">
+  <div id="marqueeNav" class="marquee-nav"></div>
+ <div class="container mt-5 shadow-lg p-5 bg-white rounded">
+    <h2 class="mb-4 text-center display-4">Search Nasdaq Stocks</h2>
+    
         <form class="container-fluid">
           <div class="input-group">
-            <input type="text" id="searchTerm" class="form-control" placeholder="Insert Search Term Here" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" id="searchTerm" class="form-control" placeholder="Search for company stock symbol" aria-label="Username" aria-describedby="basic-addon1">
             <button class="btn btn-outline-success" id="searchButton" type="button">Search</button>
           </div>
         </form>
-      </nav>
+     
       <div class="loader">
         <div class="loading">
         </div>
       </div>
-      <span id="tableResults" class="table-results"></span><span id="priceSpan"></span>
+      <div id="tableResults" class="table-results"></div>
  </div>
 </body>
 <footer>
     <script type="text/javascript" src="script.js"></script>
-
+    <script type="text/javascript" src="Marquee.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </footer>
 </html>
