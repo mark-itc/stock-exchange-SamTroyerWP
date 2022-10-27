@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 marqueeStocks();
 
 const searchButton = document.getElementById('searchButton');
+=======
+const searchButton = document.getElementById('searchButton')
+>>>>>>> f7f0bddfe003885946077b85a0bed36fe1bc7d96
 
 searchButton.addEventListener('click', () => {
     document.getElementById("tableResults").innerHTML = '';
@@ -16,6 +20,7 @@ async function searchResults() {
 
    
 
+<<<<<<< HEAD
     // companyResults();
     stopSpinner();
     
@@ -62,6 +67,27 @@ async function searchResults() {
     //     console.error(error);
     //     }
     // }
+=======
+function searchResults() {
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+
+        stopSpinner();
+        
+        let text = this.response;
+        let result = "";
+        
+        JSON.parse(text).forEach(value => result += "<a href='company.html?symbol=" + value.symbol +"'>" + value.name + "  " + '(' + value.symbol + ') </a>  <hr>')
+        
+
+        document.getElementById("tableResults").innerHTML = result;
+        }
+    };
+
+    xmlhttp.open("GET", "https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/search?query=AA&limit=10&exchange=NASDAQ", true);
+    xmlhttp.send();
+>>>>>>> f7f0bddfe003885946077b85a0bed36fe1bc7d96
 }
 
 
