@@ -16,7 +16,6 @@ async function companyResults() {
     document.getElementById("compImage").innerHTML = '<img src="' + result.profile.image + '">';
     document.getElementById("compName").innerHTML = result.profile.companyName + ' (' + result.profile.sector + ')';
     document.getElementById("compPrice").innerHTML = "Stock Price: $" + result.profile.price;
-<<<<<<< HEAD
     const changesPercentage = document.getElementById("compChanges");
         if (result.profile.changesPercentage >= 0) {
             changesPercentage.innerHTML = ' (+' + result.profile.changesPercentage + '%)';
@@ -24,21 +23,10 @@ async function companyResults() {
         } else {
             changesPercentage.innerHTML = ' (' + result.profile.changesPercentage + '%)';
             changesPercentage.style.color = "red"
-=======
-    // document.getElementById("compChanges").innerHTML =  ' (' + result.profile.changesPercentage + '%)';
-    const changesPercentage = document.getElementById("compChanges");
-        if (changesPercentage >= 0) {
-            changesPercentage.innerHTML = ' (-' + result.profile.changesPercentage + '%)';
-            changesPercentage.style.color = "red";
-        } else {
-            changesPercentage.innerHTML = ' (+' + result.profile.changesPercentage + '%)';
-            changesPercentage.style.color = "green"
->>>>>>> f7f0bddfe003885946077b85a0bed36fe1bc7d96
         }
     document.getElementById("compDescription").innerHTML = result.profile.description;
 };
 
-<<<<<<< HEAD
 
         async function stockHistoryResults() {
             const response = await fetch(
@@ -83,56 +71,6 @@ function addSpinner() {
     document.getElementsByClassName('loader')[0].style.display = 'block';
 }
 
-=======
-        async function stockHistoryResults() {
-            const response = await fetch(
-"https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/historical-price-full/" + param1 + "?serietype=line");
-            const data = await response.json();
-            length = data.historical.length;
-  
-            labels = [];
-            values = [];
-            for (let i = length - 1; i >= 0; i--) {
-                labels.push(data.historical[i].date);
-                values.push(data.historical[i].close);
-            }
-  
-  
-            new Chart(document.getElementById("stockChart"), {
-                
-                type: 'line',
-               
-                data: {
-                    labels: labels,
-                    datasets: [
-                        {
-                            backgroundColor: ["#3e95cd"],
-                            data: values
-                    
-                        }
-                    ]
-                },
-                options: {
-                
-                          
-                    maintainAspectRatio: false,
-                    fill: true
-                }
-            });
-  
-        }
-
-window.onload = function() {
-    companyResults();
-    addSpinner();
-    stockHistoryResults();
-};
-
-function addSpinner() {
-    document.getElementsByClassName('loader')[0].style.display = 'block';
-}
-
->>>>>>> f7f0bddfe003885946077b85a0bed36fe1bc7d96
 function stopSpinner() {
     document.getElementsByClassName('loader')[0].style.display = 'none';
 }

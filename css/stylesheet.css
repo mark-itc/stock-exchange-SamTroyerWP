@@ -13,9 +13,6 @@ hr {
   text-align: center;
 }
 
-.search-title {
-text-align: center;
-}
 
 .marquee-nav {
   width: fit-content;
@@ -74,25 +71,22 @@ text-align: center;
   }
 
   .table-results {
-    margin-left: 25px;
-    margin-top: 10px;
-<<<<<<< HEAD
+    margin-top: 40px;    
     font-size: 18px;
-    
   }
 
   .table-results img {
     max-width: 50px;
-=======
->>>>>>> f7f0bddfe003885946077b85a0bed36fe1bc7d96
+  }
+
+
+  mark.a {
+    background: yellow;
   }
 
   .container {
     margin-bottom:50px;
-<<<<<<< HEAD
     
-=======
->>>>>>> f7f0bddfe003885946077b85a0bed36fe1bc7d96
   }
   .comp-name {
     margin-left: 60px;
