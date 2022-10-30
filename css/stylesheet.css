@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+   text-decoration: none;
+   font-size: 25px; 
+}
+
+hr {
+  width: 98%;
+  text-align: center;
+}
+
+
+.marquee-nav {
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  -moz-animation: toTheLeft 1000s linear infinite;
+  -webkit-animation: toTheLeft 1000s linear infinite;
+  animation: toTheLeft 1000s linear infinite;
+}
+
+.marquee-nav span {
+  color: green;
+}
+
+@keyframes toTheLeft {
+  0%   {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.btn-outline-success {
+    border-radius: 0;
+    color:black;
+}
+
+.loader {
+    display: none;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loading {
+    border: 2px solid #ccc;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-top-color: #000000;
+    border-left-color: #0000;
+    animation: spin 1s infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .table-results {
+    margin-top: 40px;    
+    font-size: 18px;
+  }
+
+  .table-results img {
+    max-width: 50px;
+  }
+
+
+  mark.a {
+    background: yellow;
+  }
+
+  .container {
+    margin-bottom:50px;
+    
+  }
+  .comp-name {
+    margin-left: 60px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: blue;
+  }
+
+  .comp-image {
+    display:flex;
+    float:left;
+    padding-right: 20px;
+  }
+
+  .comp-description {
+    margin-top: 30px;
+  }
+
+  .comp-price {
+    margin-top: 20px;
+  }
